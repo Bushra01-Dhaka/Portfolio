@@ -1,9 +1,10 @@
+import { FaArrowCircleRight, FaDownload } from "react-icons/fa";
 import my_pic from "../../assets/bushra.png";
 import { Link } from "react-router";
 
 const AboutMe = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen lg:p-20 p-10">
+    <div className="flex bg-black justify-center items-center min-h-screen lg:p-20 p-10">
       <div>
         <h2
           className="text-4xl lg:text-5xl font-extrabold text-center
@@ -29,7 +30,7 @@ const AboutMe = () => {
             </p>
 
             {/* Buttons */}
-            <div className="flex gap-4 pt-4">
+            <div className="flex flex-col lg:flex-row gap-4 pt-4">
               
               {/* Download CV */}
               <a
@@ -39,7 +40,7 @@ const AboutMe = () => {
                 bg-linear-to-r from-primary to-[#B4E50D]
                 hover:scale-105 transition-transform duration-300"
               >
-                Download CV
+                <FaDownload className="inline text-xl mr-2"/>Download CV
               </a>
 
               {/* My Projects */}
@@ -48,9 +49,9 @@ const AboutMe = () => {
                 className="px-6 py-3 rounded-full font-semibold
                 border-2 border-primary text-primary
                 hover:bg-primary hover:text-black
-                transition duration-300"
+                transition duration-300 shadow-2xl shadow-primary"
               >
-                My Projects
+                <FaArrowCircleRight className="inline text-2xl mr-2"/>My Projects
               </Link>
             </div>
           </div>

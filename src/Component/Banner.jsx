@@ -83,15 +83,15 @@ const Banner = () => {
 
           <div className="py-6 flex justify-center gap-4">
             <Link to="https://github.com/Bushra01-Dhaka">
-              <FaGithub className="text-3xl text-primary shadow-xl shadow-primary rounded-full" />
+              <FaGithub className="text-3xl text-primary shadow-xl shadow-primary rounded-full hover:scale-105 transition duration-300" />
             </Link>
 
             <Link to="https://www.linkedin.com/in/humayra1/">
-              <TiSocialLinkedinCircular className="text-5xl text-primary shadow-xl shadow-primary rounded-full" />
+              <TiSocialLinkedinCircular className="text-5xl text-primary shadow-xl shadow-primary rounded-full hover:scale-105 transition duration-300" />
             </Link>
 
             <Link>
-              <ImMail4 className="text-3xl text-primary shadow-xl shadow-primary rounded-full" />
+              <ImMail4 className="text-3xl text-primary shadow-xl shadow-primary rounded-full hover:scale-105 transition duration-300" />
             </Link>
           </div>
         </div>
