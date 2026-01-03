@@ -16,22 +16,25 @@ const AboutMe = () => {
         </h2>
 
         <div className="py-10 flex flex-col lg:flex-row justify-evenly items-center lg:gap-20 gap-6">
-          
           {/* left */}
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
             <h3 className="text-2xl font-bold font-primary">Hi there 👋</h3>
 
             <p className="py-4 lg:max-w-[500px]">
-              I am a Frontend Developer specializing in React, with a strong focus
-              on building responsive and user-friendly web applications. I have
-              experience developing real-world projects like Ecobin and
+              I am a Frontend Developer specializing in React, with a strong
+              focus on building responsive and user-friendly web applications. I
+              have experience developing real-world projects like Ecobin and
               Parcelio, where I worked on clean UI implementation, smooth user
               flows, and reliable application structure.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-col lg:flex-row gap-4 pt-4">
-              
               {/* Download CV */}
               <a
                 href="/Humayra_Anjum_Bushra_CV.pdf"
@@ -40,7 +43,8 @@ const AboutMe = () => {
                 bg-linear-to-r from-primary to-[#B4E50D]
                 hover:scale-105 transition-transform duration-300"
               >
-                <FaDownload className="inline text-xl mr-2"/>Download CV
+                <FaDownload className="inline text-xl mr-2" />
+                Download CV
               </a>
 
               {/* My Projects */}
@@ -51,13 +55,20 @@ const AboutMe = () => {
                 hover:bg-primary hover:text-black
                 transition duration-300 shadow-2xl shadow-primary"
               >
-                <FaArrowCircleRight className="inline text-2xl mr-2"/>My Projects
+                <FaArrowCircleRight className="inline text-2xl mr-2" />
+                My Projects
               </Link>
             </div>
           </div>
 
           {/* right */}
-          <div className=" shadow-2xl shadow-primary rounded-2xl">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            className=" shadow-2xl shadow-primary rounded-2xl"
+          >
             <img
               className="lg:h-[300px] rounded-2xl"
               src={my_pic}

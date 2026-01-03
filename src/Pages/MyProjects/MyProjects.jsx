@@ -4,13 +4,19 @@ const MyProjects = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-black lg:p-20 p-10">
       <div>
-        <div className="text-center">
+        <div
+          data-aos="fade-in"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          className="text-center"
+        >
           <p>Explore Projects</p>
           <h3 className="text-3xl lg:text-5xl font-bold text-white">
             Explore My Recent{" "}
             <span
               className="tracking-wide
-            bg-gradient-to-r from-primary to-[#B4E50D]
+            bg-linear-to-r from-primary to-[#B4E50D]
             bg-clip-text text-transparent"
             >
               Projects
@@ -21,19 +27,14 @@ const MyProjects = () => {
         <div className="py-20 flex flex-col lg:flex-row justify-between items-center gap-10">
           {/* left */}
           <div
-            className="
-  relative
-  w-full
-  max-w-[600px]
-  aspect-video
-  border-2 border-primary
-  shadow-lg shadow-primary
-  overflow-hidden
-  rounded-xl
-"
+            data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+            className="relative w-full max-w-[600px] aspect-video shadow-lg shadow-primary overflow-hidden rounded-xl"
           >
             <video
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fit "
               autoPlay
               loop
               muted
@@ -43,7 +44,12 @@ const MyProjects = () => {
             </video>
           </div>
           {/* right */}
-          <div>
+          <div
+            data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          >
             <h2 className="text-2xl font-bold">Ecobin</h2>
             <p className="py-4 lg:max-w-[600px]">
               A waste management platform that streamlines pickup requests,
@@ -103,29 +109,37 @@ const MyProjects = () => {
         <div className="py-20 flex flex-col lg:flex-row justify-between items-center gap-10">
           {/* left */}
           <div
+            data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
             className="
   relative
   w-full
   max-w-[600px]
   aspect-video
-  border-2 border-primary
-  shadow-lg shadow-primary
+  shadow-lg  shadow-primary
   overflow-hidden
   rounded-xl
 "
           >
             <video
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fit bg-transparent"
               autoPlay
               loop
               muted
               playsInline
             >
-              <source src="/ecobin.mp4" type="video/mp4" />
+              <source src="/parcelio.mp4" type="video/mp4" />
             </video>
           </div>
           {/* right */}
-          <div>
+          <div
+            data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          >
             <h2 className="text-2xl font-bold">Parcelio</h2>
             <p className="py-4 lg:max-w-[600px]">
               A parcel delivery application enabling booking, real-time

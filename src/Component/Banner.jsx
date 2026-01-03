@@ -65,7 +65,12 @@ const Banner = () => {
 
       <div className="absolute inset-0 bg-black/50 -z-10"></div>
 
-      <div className="flex justify-center items-center lg:p-20 p-10">
+      <div 
+        data-aos="zoom-in"
+        data-aos-offset="200"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      className="flex justify-center items-center lg:p-20 p-10">
         <div className="text-center text-white">
           <p className="text-secondary">Hello, I'm</p>
 

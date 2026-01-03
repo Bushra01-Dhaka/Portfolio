@@ -25,16 +25,19 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black  lg:p-20 p-10">
+    <div className="flex justify-center items-center min-h-screen bg-black lg:py-40  lg:px-20 p-10">
       <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-12">
-        
         {/* Left */}
-        <div className="lg:max-w-[40%]">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          className="lg:max-w-[40%]"
+        >
           <p className="text-secondary">My Skills</p>
 
-          <h3 className="text-3xl font-bold text-white">
-            Let's Explore My
-          </h3>
+          <h3 className="text-3xl font-bold text-white">Let's Explore My</h3>
 
           <h2
             className="text-4xl lg:text-5xl font-extrabold tracking-wide
@@ -48,18 +51,19 @@ const Skills = () => {
             These are the technologies I use to build modern, scalable, and
             user-focused web applications.
           </p>
-           
-           <div className="my-10">
+
+          <div className="my-10">
             <Link
-                to="/myProjects"
-                className="px-6 py-3 rounded-full font-semibold
+              to="/myProjects"
+              className="px-6 py-3 rounded-full font-semibold
                 border-2 border-primary text-primary
                 hover:bg-primary hover:text-black
                 transition duration-300 shadow-2xl shadow-primary"
-              >
-                <FaArrowCircleRight className="inline text-2xl mr-2"/>Explore Projects
-              </Link>
-           </div>
+            >
+              <FaArrowCircleRight className="inline text-2xl mr-2" />
+              Explore Projects
+            </Link>
+          </div>
         </div>
 
         {/* Right */}
@@ -67,6 +71,10 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="100"
+              data-aos-duration="1000"
               className="flex flex-col cursor-pointer items-center justify-center gap-3
               p-6 rounded-2xl
               bg-white/5 backdrop-blur-md
@@ -75,14 +83,10 @@ const Skills = () => {
               hover:scale-105 transition duration-300"
             >
               {/* Icon */}
-              <div className="text-4xl text-primary">
-                {skill.icon}
-              </div>
+              <div className="text-4xl text-primary">{skill.icon}</div>
 
               {/* Name */}
-              <h4 className="text-white font-semibold">
-                {skill.name}
-              </h4>
+              <h4 className="text-white font-semibold">{skill.name}</h4>
 
               {/* Percentage Button */}
               <button
@@ -96,7 +100,6 @@ const Skills = () => {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );
