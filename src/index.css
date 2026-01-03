@@ -19,6 +19,7 @@
    font-style: normal;
 }
 
+
 .wave {
     position: absolute;
     bottom: 0;
@@ -32,11 +33,10 @@
 .wave svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 100px;
+    width: calc(106% + 1.3px);
+    height: 98px;
 }
 
 .wave .shape-fill {
     fill: #000000;
 }
-

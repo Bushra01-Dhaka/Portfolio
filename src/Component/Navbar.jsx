@@ -1,51 +1,53 @@
 import { Link, NavLink } from "react-router";
-
+import logo from "../assets/littleStar.svg";
 const Navbar = () => {
-  const navItems = <>
-  <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
-    <NavLink
-      to="/aboutMe"
-      className={({ isActive }) =>
-        isActive ? "text-primary font-semibold" : ""
-      }
-    >
-      About Me
-    </NavLink>
-  </li>
+  const navItems = (
+    <>
+      <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+        <NavLink
+          to="/aboutMe"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          About Me
+        </NavLink>
+      </li>
 
-   <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
-    <NavLink
-      to="/skills"
-      className={({ isActive }) =>
-        isActive ? "text-primary font-semibold" : ""
-      }
-    >
-      Skills
-    </NavLink>
-  </li>
+      <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+        <NavLink
+          to="/skills"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          Skills
+        </NavLink>
+      </li>
 
-  <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
-    <NavLink
-      to="/myProjects"
-      className={({ isActive }) =>
-        isActive ? "text-primary font-semibold" : ""
-      }
-    >
-      Projects
-    </NavLink>
-  </li>
+      <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+        <NavLink
+          to="/myProjects"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          Projects
+        </NavLink>
+      </li>
 
-  <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
-    <NavLink
-      to="/contactMe"
-      className={({ isActive }) =>
-        isActive ? "text-primary font-semibold" : ""
-      }
-    >
-      Contact
-    </NavLink>
-  </li>
-</>;
+      <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+        <NavLink
+          to="/contactMe"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          Contact
+        </NavLink>
+      </li>
+    </>
+  );
 
   return (
     <div className="navbar bg-transparent md:max-w-screen-2xl mx-auto lg:px-12 px-4 fixed z-99">
@@ -72,15 +74,30 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-           {navItems}
+            {navItems}
           </ul>
         </div>
-          <Link><p className="text-lg lg:text-2xl text-primary font-bold">Bushra.</p></Link>
+        <Link to="/">
+          <div className="flex justify-center items-center">
+            <img
+              className="w-[30px] h-[30px] rounded-full bg-primary
+                 animate-spin [animation-duration:6s] [animation-timing-function:linear]"
+              src={logo}
+              alt="Logo"
+            />
+
+            <h2
+              className="text-lg lg:text-2xl font-bold tracking-wide
+      bg-gradient-to-r ml-[-4px] from-primary to-[#B4E50D]
+      bg-clip-text text-transparent"
+            >
+              Bushra.
+            </h2>
+          </div>
+        </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {navItems}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
     </div>
   );
