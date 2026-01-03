@@ -25,7 +25,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black lg:p-20 p-10">
+    <div className="flex justify-center items-center min-h-screen bg-black  lg:p-20 p-10">
       <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-12">
         
         {/* Left */}
@@ -51,7 +51,7 @@ const Skills = () => {
            
            <div className="my-10">
             <Link
-                to="/projects"
+                to="/myProjects"
                 className="px-6 py-3 rounded-full font-semibold
                 border-2 border-primary text-primary
                 hover:bg-primary hover:text-black
@@ -67,7 +67,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center gap-3
+              className="flex flex-col cursor-pointer items-center justify-center gap-3
               p-6 rounded-2xl
               bg-white/5 backdrop-blur-md
               border border-white/10

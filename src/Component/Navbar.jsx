@@ -4,20 +4,31 @@ const Navbar = () => {
   const navItems = <>
   <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
     <NavLink
-      to=""
+      to="/aboutMe"
       className={({ isActive }) =>
-        isActive ? "text-primary font-semibold" : "text-secondary"
+        isActive ? "text-primary font-semibold" : ""
       }
     >
       About Me
     </NavLink>
   </li>
 
+   <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+    <NavLink
+      to="/skills"
+      className={({ isActive }) =>
+        isActive ? "text-primary font-semibold" : ""
+      }
+    >
+      Skills
+    </NavLink>
+  </li>
+
   <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
     <NavLink
-      to=""
+      to="/myProjects"
       className={({ isActive }) =>
-        isActive ? "text-primary font-semibold" : "text-secondary"
+        isActive ? "text-primary font-semibold" : ""
       }
     >
       Projects
@@ -28,7 +39,7 @@ const Navbar = () => {
     <NavLink
       to=""
       className={({ isActive }) =>
-        isActive ? "text-primary font-semibold" : "text-secondary"
+        isActive ? "text-primary font-semibold" : ""
       }
     >
       Contact

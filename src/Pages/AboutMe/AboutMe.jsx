@@ -45,7 +45,7 @@ const AboutMe = () => {
 
               {/* My Projects */}
               <Link
-                to="/projects"
+                to="/myProjects"
                 className="px-6 py-3 rounded-full font-semibold
                 border-2 border-primary text-primary
                 hover:bg-primary hover:text-black
