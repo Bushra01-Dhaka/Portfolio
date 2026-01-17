@@ -3,7 +3,6 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/Home";
 import AboutMe from "../Pages/AboutMe/AboutMe";
 import Skills from "../Pages/Skills/Skills";
-import MyProjects from "../Pages/MyProjects/MyProjects";
 import Contact from "../Pages/ContactMe/Contact";
 import Projects from "../Pages/MyProjects/Projects";
 

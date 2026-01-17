@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const AboutMe = () => {
   return (
-    <div className="flex bg-black justify-center items-center min-h-screen lg:p-20 p-10">
+    <div className="flex bg-black justify-center items-center min-h-screen lg:p-20 pt-20 p-10">
       <div>
         <h2
           className="text-4xl lg:text-5xl font-extrabold text-center
@@ -37,11 +37,12 @@ const AboutMe = () => {
             <div className="flex flex-col lg:flex-row gap-4 pt-4">
               {/* Download CV */}
               <a
-                href="/Humayra_Anjum_Bushra_CV.pdf"
-                download
+                href="https://drive.google.com/file/d/1xkHREbWUFYFRd4uVJn1a6m10oeGSCDXt/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 rounded-full font-semibold text-black
-                bg-linear-to-r from-primary to-[#B4E50D]
-                hover:scale-105 transition-transform duration-300"
+             bg-linear-to-r from-primary to-[#B4E50D]
+             hover:scale-105 transition-transform duration-300"
               >
                 <FaDownload className="inline text-xl mr-2" />
                 Download CV

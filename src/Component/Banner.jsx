@@ -74,7 +74,7 @@ const Banner = () => {
         <div className="text-center text-white">
           <p className="text-secondary">Hello, I'm</p>
 
-          <h2 className="text-5xl lg:text-6xl font-bold  tracking-wide
+          <h2 className="text-4xl lg:text-6xl font-bold  tracking-wide
           bg-linear-to-r from-primary to-[#B4E50D]
           bg-clip-text text-transparent">
             Humayra Anjum Bushra

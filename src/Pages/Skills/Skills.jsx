@@ -25,7 +25,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black lg:py-40  lg:px-20 p-10">
+    <div className="flex justify-center items-center min-h-screen bg-black lg:py-40  lg:px-20 pt-20 p-10">
       <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-12">
         {/* Left */}
         <div
